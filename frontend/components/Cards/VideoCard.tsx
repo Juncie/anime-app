@@ -1,16 +1,16 @@
 import { ImageListItem, ImageListItemBar } from '@mui/material';
 
 interface Props {
-	title: string;
-	image: string;
+	title?: string;
+	image?: string;
 	subtitle?: string;
-	key: number;
+	id?: any;
 }
 
-export default function VideoCard({ title, image, subtitle, key }: Props) {
+export default function VideoCard({ title, image, subtitle, id}: Props) {
 	return (
 		<>
-			<ImageListItem key={key} sx={{ minHeight: 200, minWidth: 300 }} className='cursor-pointer'>
+			<ImageListItem key={id} sx={{ minHeight: 200, minWidth: 300 }} className='cursor-pointer'>
 				<img src={image} alt={title} className='rounded-md flex-1 aspect-square object-center' />
 				<ImageListItemBar title={title} position='bottom' subtitle={subtitle} sx={{ titleWrap: 'wrap' }} />
 			</ImageListItem>
