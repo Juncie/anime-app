@@ -5,7 +5,7 @@ const mapAnime = (anime: any) => {
     <VideoCard 
       id={show.id}
       key={i}
-      title={show.title?.english} 
+      title={show.title?.english || show.title} 
       image={show.coverImage}/>
   ))
 }

@@ -1,10 +1,10 @@
 import AnimeList from '@/components/Lists/AnimeLists';
 import mapAnime from '@/functions/_mapAnime';
 
-interface Props { data: any}
+interface Props { data: any, title: string}
 
-export default function PopularAnimeList({ data }: Props): JSX.Element {
+export default function PopularAnimeList({ data, title }: Props): JSX.Element {
 	let mappedAnime = mapAnime(data);
-	return <AnimeList title='Popular' children={mappedAnime} />;
+	return <AnimeList title={title} children={mappedAnime} />;
 }
 

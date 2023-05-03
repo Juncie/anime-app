@@ -19,9 +19,9 @@ export default function HomePage(props){
 		<>
 			<Container maxWidth='md' >
 				<Box>
-					<Stack spacing={2}>
-					<PopularAnimeList data={PopularShows}/>
-					<RecentAnimeList data={RecentShows}/>
+					<Stack spacing={5}>
+					<PopularAnimeList data={PopularShows} title='Popular'/>
+					<RecentAnimeList data={RecentShows} title='Recent'/>
 					</Stack>
 				</Box>
 			</Container>
