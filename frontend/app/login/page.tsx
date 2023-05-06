@@ -1,14 +1,14 @@
-import { useState } from 'react';
+'use client';
 import { Stack, Container, Box } from '@mui/material';
 import Image from 'next/image';
-
+import { createElement, useContext, useRef, Fragment } from 'react'
 import LoginForm from './_loginForm';
 import Logo from '@/components/Logo';
-import AppleIcon from '/public/assets/icons/Apple.svg';
-import GoogleIcon from '/public/assets/icons/Google.svg';
-import FacebookIcon from '/public/assets/icons/Facebook.svg';
+import  AppleIcon from '/public/Apple.svg';
+import  GoogleIcon from '/public/Google.svg';
+import  FacebookIcon from '/public/Facebook.svg';
 
-const LoginPage = () => {
+export default function LoginPage() {
 	return (
 		<Container maxWidth='sm' className='h-screen flex items-center flex-col justify-center space-y-5'>
 			<Stack className='w-full pb-5' spacing={1}>
@@ -34,4 +34,4 @@ const LoginPage = () => {
 	);
 };
 
-export default LoginPage;
+

@@ -1,5 +1,5 @@
+import React from 'react';
 import '@/styles/globals.css';
-import type { AppProps } from 'next/app';
 import { Montserrat } from 'next/font/google'
 
 const montserrat = Montserrat({
@@ -8,11 +8,10 @@ const montserrat = Montserrat({
 	variable: '--font-montserrat'
 })
 
-export default function App({ Component, pageProps }: AppProps) {
-	// console.log('App Props:', pageProps);
+export default function App() {
 	return (
-		<main className={`${montserrat.variable} font-sans`}>
-			<Component {...pageProps} />
-		</main>
+		<>
+			<div>APP HOME SCREEN</div>
+		</>
 	);
 }

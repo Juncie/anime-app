@@ -1,3 +1,4 @@
+import React from 'react';
 import { Stack, Container } from '@mui/material';
 import { useState } from 'react';
 import { ActionButton } from '@/components/Button/';
@@ -5,7 +6,7 @@ import { ActionButton } from '@/components/Button/';
 const LoginForm = () => {
 	let inputClass = 'rounded-sm py-2 pl-2 bg-gray-200 text-gray-800 w-full';
 	return (
-		<>
+		<div>
 			<form className='w-full flex items-center '>
 				<Container className='space-y-10'>
 					<Stack spacing={2}>
@@ -24,7 +25,7 @@ const LoginForm = () => {
 					</Stack>
 				</Container>
 			</form>
-		</>
+		</div>
 	);
 };
 
